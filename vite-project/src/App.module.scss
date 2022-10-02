@@ -1,0 +1,134 @@
+$palevioletred: palevioletred;
+$white: white;
+$black: black;
+$greyBlack: rgba(0, 0, 0, 1);
+body{
+    font-family: 'Inter' , sans-serif;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: $black;
+}
+a{
+    color: pink;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    &:hover{
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+}
+ul{
+    padding-left: 0px;
+    li{
+        align-self:center;
+    }
+}
+.logo{
+    color:rgba(255, 0, 238, 0.67);
+}
+header{
+    div{
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        width: -webkit-fill-available;
+    }
+    }
+}
+.wraperButtons{
+    display: flex;
+   justify-content: space-evenly;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(5 , 250px);
+    place-content: center;
+    margin: 30px 20px;
+    gap: 30px 30px;
+    button{
+        background-color: $black;
+        width: min-content;
+        padding: 10px 25px;
+        color: $palevioletred;
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+    .buttonPrev{
+        border-radius: 8px 24px 24px 8px;
+        box-shadow: -1px 2px 3px $greyBlack;
+        transition: color;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        &:hover{
+            color: $white;
+        }
+    }
+    .buttonNext{
+        border-radius: 24px 8px 8px 24px;
+        box-shadow: -1px 2px 3px $greyBlack;
+        transition: color;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        &:hover{
+            color: $white;
+        }
+    }
+
+}
+.product{
+    background-color: $black;
+    cursor: pointer;
+    text-align: center;
+    color: $palevioletred;
+    padding: 10px 8px;
+    border:3px solid $black ;
+    border-radius: 14px;
+    box-shadow: -1px 2px 3px rgba(0, 0, 0, 1);
+    img{
+        width: 200px;
+        height: 130px;
+        object-fit: cover;
+    }
+}
+.windoWproduct{
+    display: flex;
+    position: relative;
+    left: 80%;
+    gap: 0px 50px;
+    color: $palevioletred;
+    img{
+        background: #f6ecff;
+        border-radius: 50px;
+    }
+    div{
+        display: inline-block;
+        background-color: black;
+        padding: 40px 100px;
+        border-radius: 24px;
+        button{
+            border: 3px solid $white;
+            border-radius: 15px;
+        }
+    }
+}
+footer{
+    background-color: $black;
+    div{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

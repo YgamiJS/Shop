@@ -1,0 +1,122 @@
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: black;
+}
+
+a {
+  color: pink;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+ul {
+  padding-left: 0px;
+}
+ul li {
+  align-self: center;
+}
+
+.logo {
+  color: rgba(255, 0, 238, 0.67);
+}
+
+header div {
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+}
+header div ul {
+  display: flex;
+  justify-content: space-around;
+  width: -webkit-fill-available;
+}
+
+.wraperButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  place-content: center;
+  margin: 30px 20px;
+  gap: 30px 30px;
+}
+.content button {
+  background-color: black;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 10px 25px;
+  color: palevioletred;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.content .buttonPrev {
+  border-radius: 8px 24px 24px 8px;
+  box-shadow: -1px 2px 3px rgb(0, 0, 0);
+  transition: color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+.content .buttonPrev:hover {
+  color: white;
+}
+.content .buttonNext {
+  border-radius: 24px 8px 8px 24px;
+  box-shadow: -1px 2px 3px rgb(0, 0, 0);
+  transition: color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+.content .buttonNext:hover {
+  color: white;
+}
+
+.product {
+  background-color: black;
+  cursor: pointer;
+  text-align: center;
+  color: palevioletred;
+  padding: 10px 8px;
+  border: 3px solid black;
+  border-radius: 14px;
+  box-shadow: -1px 2px 3px rgb(0, 0, 0);
+}
+.product img {
+  width: 200px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.windoWproduct {
+  color: palevioletred;
+}
+
+footer {
+  background-color: black;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}/*# sourceMappingURL=App.module.css.map */
