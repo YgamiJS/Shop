@@ -15,6 +15,7 @@ export default function ContentWraper(){
         <div>
           <h1>{dataProduct.name}</h1>
           <p>{dataProduct.accomplishment}</p>
+          <p>{dataProduct?.price}</p>
           <button>Buy</button>
         </div>
       </div>
@@ -33,6 +34,7 @@ export default function ContentWraper(){
         <img src={product.imageId} />
         <h1>{product.name}</h1>
         <p>{product.accomplishment}</p>
+        <p>{product?.price}</p>
       </div>
 
       )})
@@ -45,6 +47,7 @@ export default function ContentWraper(){
         <img src={product.imageId} />
         <h1>{product.name}</h1>
         <p>{product.accomplishment}</p>
+        <p>{product?.price}</p>
       </div> 
 
       )})
