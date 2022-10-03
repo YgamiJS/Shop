@@ -1,5 +1,6 @@
 import {useState} from "react"
 import styled from '../App.module.scss'
+import photo from "../public/favpng_nike-air-max-270-womens-shoe-nike-wmns-air-max-270-flyknit-womens-sports-shoes.png"
 import {data} from "../data.jsx"
 
 export default function ContentWraper(){

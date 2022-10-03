@@ -1,8 +1,9 @@
+import photo from "./public/favpng_nike-air-max-270-womens-shoe-nike-wmns-air-max-270-flyknit-womens-sports-shoes.png"
 export const data = [{
     id: '0',
     name: 'Creola Katherine Johnson',
     accomplishment: 'spaceflight calculations',
-    imageId: '../public/favpng_nike-air-max-270-womens-shoe-nike-wmns-air-max-270-flyknit-womens-sports-shoes.png',
+    imageId: photo,
     price: 1450
   }, {
     id: '1',
